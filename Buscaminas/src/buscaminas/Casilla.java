@@ -14,7 +14,7 @@ public class Casilla {
     private boolean blanca;
     private boolean bandera;
     private boolean visible;
-    private int numero;
+    private int numero; //Número de minas alrededor.
 
     /**
      * Constructor Por Defecto
