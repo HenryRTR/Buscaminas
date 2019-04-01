@@ -7,7 +7,7 @@ package buscaminas;
 
 /**
  *
- * @author HenryR
+ * @author Henry Richard
  */
 public class Casilla {
     private boolean mina;
