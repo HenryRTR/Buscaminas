@@ -16,9 +16,7 @@ public class Casilla {
     private boolean visible;
     private int numero;
 
-    /**
-     * Constructor Por Defecto
-     */
+
     public Casilla() {
         this.mina = false;
         this.blanca = false;
