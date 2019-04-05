@@ -118,14 +118,14 @@ public class Juego {
      * Muestra el Tablero con los Numeros
      */
     private void mostrarTablero(){
-        String fila = "   ";
+        String fila = "  ";
         for (int i = 0; i < tablero.getNumColumnas(); i++) {
-            fila += " "+ Integer.toString(i) + "  ";
+            fila += "   "+ Integer.toString(i);
         }
         
         System.out.println(fila);
         for (int j = 0; j < tablero.getNumFilas(); j++) {
-            String fila1 = Integer.toString(j)+"|" + "  ";
+            String fila1 = Integer.toString(j)+"|" + "   ";
             
             for (int x = 0; x < tablero.getNumColumnas(); x++) {
                 if(tablero.getCasilla(j, x).isBandera()){
@@ -138,7 +138,7 @@ public class Juego {
                     }
                 }
             }
-            System.out.println(fila1 +Integer.toHexString(j));
+            System.out.println(fila1+"|"+Integer.toString(j));
         }
         System.out.println(fila);
     }
@@ -205,14 +205,14 @@ public class Juego {
     private void acabarJuegoMina(){
         System.out.println("Juego Finalizado has Pisado una Mina");
         System.out.println("");
-        String fila = "   ";
+        String fila = "  ";
         for (int i = 0; i < tablero.getNumColumnas(); i++) {
-            fila += " "+Integer.toString(i)+"  ";
+            fila += "   "+Integer.toString(i);
         }
         System.out.println(fila);
         
         for (int x = 0; x < tablero.getNumFilas(); x++) {
-            String fila1 = Integer.toString(x)+"|" + "  ";
+            String fila1 = Integer.toString(x)+"|" + "   ";
             for (int j = 0; j < tablero.getNumColumnas(); j++) {
                 if(tablero.getCasilla(x, j).isMina()){
                     fila1 += "M   ";
@@ -224,8 +224,9 @@ public class Juego {
                     }
                 }
             }
-            System.out.println(fila1 + Integer.toHexString(x));
+            System.out.println(fila1 +"|"+ Integer.toString(x));
         }
+        System.out.println(fila);
     }
     
     /**
