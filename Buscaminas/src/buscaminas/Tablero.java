@@ -66,18 +66,18 @@ public class Tablero {
     }
     
     public void imprimirPrueba(){
-        for (int i = 0; i < tabla.length; i++) {
+        for(int i = 0; i < this.tabla.length; i++){
             String fila = "";
-            for (int j = 0; j < tabla[i].length; j++) {
-                if(tabla[i][j].isMina()){
+            for(int j = 0; j < this.tabla[0].length; j++){
+                if(this.tabla[i][j].isMina()){
                     fila += "M  ";
                 }else{
-                    fila = Integer.toString(this.tabla[i][j].getNumero())+"  ";
-                }
+                    fila += Integer.toString(this.tabla[i][j].getNumero()) + "  ";
+                }                
             }
             System.out.println(fila);
         }
-    } 
+    }
     
     /**
      * 
