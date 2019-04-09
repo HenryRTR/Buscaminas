@@ -72,7 +72,7 @@ public class Tablero {
                 if(tabla[i][j].isMina()){
                     fila += "M  ";
                 }else{
-                    fila = Integer.toString(this.tabla[i][j].getNumero())+"  ";
+                    fila += Integer.toString(this.tabla[i][j].getNumero())+"  ";
                 }
             }
             System.out.println(fila);
