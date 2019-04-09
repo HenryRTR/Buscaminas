@@ -56,6 +56,7 @@ public class Juego {
         tablero = new Tablero(numFilas, numColumnas);
         tablero.inicializarTabla();
         tablero.insertarMinas(numMinas);
+        tablero.imprimirPrueba();
     }
     
     /**
